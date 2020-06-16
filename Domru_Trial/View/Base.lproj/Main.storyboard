@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Weather View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Domru_Trial" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WeatherViewController" customModule="Domru_Trial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,15 +31,36 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5rn-W1-IK9">
+                                <rect key="frame" x="0.0" y="165" width="414" height="647"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReusableCell" id="mcD-lg-qUp">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mcD-lg-qUp" id="A21-zk-3Er">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="04y-XL-BIH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="38B-NL-yQ1"/>
+                            <constraint firstItem="5rn-W1-IK9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Drh-Rn-son"/>
+                            <constraint firstItem="5rn-W1-IK9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Eld-K1-J2n"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="04y-XL-BIH" secondAttribute="trailing" constant="50" id="Ghw-kI-fwi"/>
+                            <constraint firstItem="5rn-W1-IK9" firstAttribute="top" secondItem="04y-XL-BIH" secondAttribute="bottom" constant="50" id="H8P-5a-pPM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5rn-W1-IK9" secondAttribute="bottom" constant="50" id="RAd-UI-1uR"/>
                             <constraint firstItem="04y-XL-BIH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="n9F-KQ-RxV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="table" destination="5rn-W1-IK9" id="bWF-TP-65e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
