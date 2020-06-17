@@ -19,19 +19,61 @@ struct Parts:Codable{
 }
 
 struct DayShort: Codable{
-    let temp: Double
+    let temp: Int
     let icon: String
+    
+    var getPic: String{
+        switch icon{
+        case "bkn_d":
+            return "partly.cloudy.day"
+        case "skc_n":
+            return "sun.max"
+        case "ovc_-ra":
+            return "cloud.rain"
+        default:
+            return "cloud"
+        }
+       
+    }
 }
 
 struct NightShort: Codable{
-    let temp: Double
+    let temp: Int
     let icon: String
+    
+    var getPic: String{
+        switch icon{
+        case "bkn_d":
+            return "partly.cloudy.day"
+        case "skc_n":
+            return "sun.max"
+        case "ovc_-ra":
+            return "cloud.rain"
+        default:
+            return "cloud"
+        }
+       
+    }
 }
 
 struct Hour: Codable{
     let hour: String
-    let temp: Double
+    let temp: Int
     let icon: String
+    
+    var getPic: String{
+        switch icon{
+        case "bkn_d":
+            return "partly.cloudy.day"
+        case "skc_n":
+            return "sun.max"
+        case "ovc_-ra":
+            return "cloud.rain"
+        default:
+            return "cloud"
+        }
+       
+    }
 }
 
 struct Quick: Codable{

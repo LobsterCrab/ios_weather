@@ -6,6 +6,7 @@ target 'Domru_Trial' do
 
   # Pods for Domru_Trial
   pod 'Alamofire', '~> 5.2'
+  pod 'RealmSwift'
 
 
 end

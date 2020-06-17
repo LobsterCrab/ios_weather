@@ -22,8 +22,9 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04y-XL-BIH">
                                 <rect key="frame" x="50" y="94" width="314" height="21"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="What the fuck is oatmeal">
+                                    <fragment content="Погода в Перми">
                                         <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="17" name="AmericanTypewriter-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -58,13 +59,71 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="HEU-p2-bGv"/>
                     <connections>
                         <outlet property="table" destination="5rn-W1-IK9" id="bWF-TP-65e"/>
+                        <segue destination="Ln3-4O-SuR" kind="show" identifier="segueToHour" id="4gN-Fp-ILF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="132.58928571428572"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="132.58928571428572"/>
+        </scene>
+        <!--By Hour View Controller-->
+        <scene sceneID="IKQ-p8-AMp">
+            <objects>
+                <viewController storyboardIdentifier="ByHourViewController" id="Ln3-4O-SuR" customClass="ByHourViewController" customModule="Domru_Trial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gYO-M8-GIM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECk-26-U17">
+                                <rect key="frame" x="20" y="60" width="374" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="По часам">
+                                        <attributes>
+                                            <font key="NSFont" size="17" name="AmericanTypewriter-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x51-mA-1Fw">
+                                <rect key="frame" x="0.0" y="111" width="414" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReusableCell" id="nBz-QN-EHe">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nBz-QN-EHe" id="yuG-pD-1TK">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="x51-mA-1Fw" firstAttribute="top" secondItem="ECk-26-U17" secondAttribute="bottom" constant="30" id="21N-pY-5Ja"/>
+                            <constraint firstItem="6Km-eT-0nN" firstAttribute="trailing" secondItem="ECk-26-U17" secondAttribute="trailing" constant="20" id="7n7-Id-XvX"/>
+                            <constraint firstItem="ECk-26-U17" firstAttribute="leading" secondItem="6Km-eT-0nN" secondAttribute="leading" constant="20" id="BKO-mS-FxV"/>
+                            <constraint firstItem="6Km-eT-0nN" firstAttribute="bottom" secondItem="x51-mA-1Fw" secondAttribute="bottom" constant="30" id="bzZ-nF-yhn"/>
+                            <constraint firstItem="x51-mA-1Fw" firstAttribute="leading" secondItem="6Km-eT-0nN" secondAttribute="leading" id="m29-aQ-Eh3"/>
+                            <constraint firstItem="ECk-26-U17" firstAttribute="top" secondItem="6Km-eT-0nN" secondAttribute="top" constant="60" id="ojK-pl-3AU"/>
+                            <constraint firstItem="x51-mA-1Fw" firstAttribute="trailing" secondItem="6Km-eT-0nN" secondAttribute="trailing" id="wHq-WZ-oAi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Km-eT-0nN"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JgZ-s5-lsv"/>
+                    <connections>
+                        <outlet property="table" destination="x51-mA-1Fw" id="Ame-ff-MiX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Od-ss-UIm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2075.36231884058" y="128.57142857142856"/>
         </scene>
     </scenes>
     <resources>

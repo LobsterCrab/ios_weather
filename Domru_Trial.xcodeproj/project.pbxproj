@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5A62796C72BA451F208965D8 /* Pods_Domru_Trial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0765A8AED09590627A7AB9C0 /* Pods_Domru_Trial.framework */; };
+		637291092498FF9D00026ED1 /* ByHourManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637291082498FF9D00026ED1 /* ByHourManager.swift */; };
+		6372910B2499D56B00026ED1 /* RealmDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6372910A2499D56B00026ED1 /* RealmDB.swift */; };
 		6396134E2496699E006F1064 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6396134D2496699E006F1064 /* WeatherManager.swift */; };
 		6396135224967989006F1064 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6396135124967989006F1064 /* WeatherData.swift */; };
 		6396135424968438006F1064 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6396135324968438006F1064 /* WeatherModel.swift */; };
 		639613582498309F006F1064 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639613572498309F006F1064 /* WeatherViewController.swift */; };
 		6396135E24986C85006F1064 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6396135D24986C85006F1064 /* MessageCell.swift */; };
 		6396136024986D1E006F1064 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6396135F24986D1E006F1064 /* MessageCell.xib */; };
+		63961364249881FE006F1064 /* ByHourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63961363249881FE006F1064 /* ByHourViewController.swift */; };
 		63A7949C248DFD3F00ECC1B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7949B248DFD3F00ECC1B9 /* AppDelegate.swift */; };
 		63A7949E248DFD3F00ECC1B9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7949D248DFD3F00ECC1B9 /* SceneDelegate.swift */; };
 		63A794A3248DFD3F00ECC1B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A794A1248DFD3F00ECC1B9 /* Main.storyboard */; };
@@ -25,12 +28,15 @@
 		0765A8AED09590627A7AB9C0 /* Pods_Domru_Trial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Domru_Trial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26273A1EC2E0E45916398D22 /* Pods-Domru_Trial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domru_Trial.debug.xcconfig"; path = "Target Support Files/Pods-Domru_Trial/Pods-Domru_Trial.debug.xcconfig"; sourceTree = "<group>"; };
 		481759635D3B8FD1EB87686F /* Pods-Domru_Trial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domru_Trial.release.xcconfig"; path = "Target Support Files/Pods-Domru_Trial/Pods-Domru_Trial.release.xcconfig"; sourceTree = "<group>"; };
+		637291082498FF9D00026ED1 /* ByHourManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByHourManager.swift; sourceTree = "<group>"; };
+		6372910A2499D56B00026ED1 /* RealmDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDB.swift; sourceTree = "<group>"; };
 		6396134D2496699E006F1064 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		6396135124967989006F1064 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		6396135324968438006F1064 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		639613572498309F006F1064 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		6396135D24986C85006F1064 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageCell.swift; path = "../../../Flash-Chat-iOS13/Flash Chat iOS13/Views/MessageCell.swift"; sourceTree = "<group>"; };
 		6396135F24986D1E006F1064 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MessageCell.xib; path = "../../../Flash-Chat-iOS13/Flash Chat iOS13/Views/MessageCell.xib"; sourceTree = "<group>"; };
+		63961363249881FE006F1064 /* ByHourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByHourViewController.swift; sourceTree = "<group>"; };
 		63A79498248DFD3F00ECC1B9 /* Domru_Trial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Domru_Trial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A7949B248DFD3F00ECC1B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63A7949D248DFD3F00ECC1B9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +73,8 @@
 				6396134D2496699E006F1064 /* WeatherManager.swift */,
 				6396135124967989006F1064 /* WeatherData.swift */,
 				6396135324968438006F1064 /* WeatherModel.swift */,
+				637291082498FF9D00026ED1 /* ByHourManager.swift */,
+				6372910A2499D56B00026ED1 /* RealmDB.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -85,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				639613572498309F006F1064 /* WeatherViewController.swift */,
+				63961363249881FE006F1064 /* ByHourViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -251,6 +260,9 @@
 				6396134E2496699E006F1064 /* WeatherManager.swift in Sources */,
 				6396135224967989006F1064 /* WeatherData.swift in Sources */,
 				6396135424968438006F1064 /* WeatherModel.swift in Sources */,
+				6372910B2499D56B00026ED1 /* RealmDB.swift in Sources */,
+				637291092498FF9D00026ED1 /* ByHourManager.swift in Sources */,
+				63961364249881FE006F1064 /* ByHourViewController.swift in Sources */,
 				63A7949E248DFD3F00ECC1B9 /* SceneDelegate.swift in Sources */,
 				6396135E24986C85006F1064 /* MessageCell.swift in Sources */,
 			);
