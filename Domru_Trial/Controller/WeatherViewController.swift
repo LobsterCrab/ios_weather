@@ -42,7 +42,7 @@ extension WeatherViewController: WeatherManagerDelegate {
             
             var dbObj = WeatherDB()
 //            for i in weather.forecasts{
-//                dbObj.forecasts.append(i)
+//               dbObj.forecasts.append()
 //            }
             
             
